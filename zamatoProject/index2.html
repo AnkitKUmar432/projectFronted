@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // let t = document.createElement('p');
+
+        // let arr = [2, 3, 33, 559, 45, 348];
+
+        // //   let sumNumber=  arr.reduce(sum)
+        // //   t.innerHTML=setNumber;
+        // //   console.log(sumNumber)
+        // function sum(a) {
+        //     return a * 500;
+        // }
+
+        // // let filt = arr.filter(sum)
+        // // console.log(filt);
+        // let m = arr.map(sum);
+        // console.log(m)
+
+        // function sub(x){
+        //     return x*2;
+        // }
+
+        const users =[
+       {firstName:"monu", lastName:"kr", age:45},
+       {firstName:"sonu", lastName:"Shamra", age:80},
+       {firstName:"sonu", lastName:"Golu", age:45},
+       {firstName:"prtham", lastName:"patel", age:95}
+        ];
+
+        // const result = users.map((a)=> a.firstName+" "+a.lastName+", "+a.age)
+        const lowAge = users.filter((a)=>a.age<46).map((m)=>m.firstName+ " "+m.age)
+        console.log(lowAge);
+        // console.log(result)
+        const r = users.reduce((a)=>{
+            if(a.age<46){
+                console.log(a.firstName+ ", "+a.age);
+            }
+        });
+        console.log(r)
+
+    </script>
+</body>
+
+</html>

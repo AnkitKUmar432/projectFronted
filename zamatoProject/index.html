@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 3%;
+            height: 5px;
+            background-color: #aa2c2c;
+            animation: load 1.7s ease-in-out 1s 1 forwards;
+        }
+
+        @keyframes load {
+            from {
+                width: 3%;
+            }
+
+            to {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="box"></div> -->
+    </div>
+</body>
+
+</html>
